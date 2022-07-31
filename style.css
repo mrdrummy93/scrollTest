@@ -1,0 +1,160 @@
+.nav-item .nav-link:hover {
+    border: 1px solid white;
+}
+
+.nav-item .nav-link::after {
+    content: "     >";
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.nav-item .nav-link:hover::after {
+    opacity: 1;
+}
+
+button.navbar-toggler {
+    background-color: #0d6efd;
+}
+
+button.navbar-toggler.collapsed {
+    background-color: red;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+}
+
+.top-bar,
+.bottom-bar,
+.middle-bar {
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: white;
+}
+
+#scroll-logo {
+    width: 85px;
+    height: 25px;
+    background-image: url(./images/scroll-logo.svg);
+}
+
+#scroll-logo:hover {
+    cursor: pointer;
+    background-image: url(./images/scroll-logo-colored.svg);
+}
+
+.list-menu .nav-link:hover {
+    color: #0d6efd;
+}
+
+.news-button:hover {
+    background-color: #005291;
+}
+
+.partners {
+    filter: grayscale(1);
+}
+
+.partners:hover {
+    filter: grayscale(0);
+}
+
+.big-chips {
+    bottom: 0%;
+    right: -10%;
+    z-index: 999;
+}
+
+.big-chips:hover {
+    width: 530px;
+    height: 520px;
+    right: -20%;
+}
+
+.government-cards {
+    width: 50%;
+    height: 50%;
+}
+
+.government-cards:hover {
+    width: 110px;
+    height: 50px;
+}
+
+.socials:hover {
+    width: 54px;
+    height: 54px;
+}
+
+.btn .btn-primary:hover {
+    background-color: #005291;
+}
+
+.liders:hover {
+    width: 380px;
+    height: 480px;
+}
+
+.search-dropdown.dropdown-toggle::after {
+    content: none;
+}
+
+button.search-toggler .search-toggler-icon {
+    background-image: url(./images/cross-svgrepo-com.svg);
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    transition: all 0.2s;
+}
+
+button.search-toggler.collapsed .search-toggler-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/search.svg);
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    transition: all 0.2s;
+}
