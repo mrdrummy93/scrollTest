@@ -65,6 +65,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark bg-primary rounded-0">
                         <li><a class="dropdown-item text-white" href="#">BY</a></li>
+                        <li><a class="dropdown-item text-white" href="#">CN</a></li>
                         <li><a class="dropdown-item text-white" href="#">EN</a></li>
                     </ul>
                 </div>
@@ -97,30 +98,59 @@
         <div class="d-flex ms-0 bg-primary text-white fw-bold pt-5" style="width: 1917px; height: 980px">
             <ul class="navbar-nav mr-auto mb-2 me-5 list-unstyled display-5 fw-bold">
                 <li class="nav-item">
-                    <a href="" class="nav-link ps-5">О компании</a>
-                    <a href="" class="nav-link ps-5">Продукция</a>
-                    <a href="" class="nav-link ps-5">Новости</a>
-                    <a href="" class="nav-link ps-5">Контакты</a>
-                    <a href="" class="nav-link ps-5">Промышленность</a>
+                    <a href="" class="nav-link ps-5 pb-5 about">О компании</a>
+                    <a href="" class="nav-link ps-5 pb-5 production">Продукция</a>
+                    <a href="" class="nav-link ps-5 pb-5 industry">Промышленность</a>
+                    <a href="" class="nav-link ps-5 pb-5">Новости</a>
+                    <a href="" class="nav-link ps-5 pb-5 contacts">Контакты</a>
                 </li>
             </ul>
-            <ul class="navbar-nav mr-auto mb-2 ms-5 list-unstyled">
+            <ul class="navbar-nav mr-auto mb-2 ms-5 list-unstyled about-submenu">
                 <li class="nav-item">
-                    <a href="" class="nav-link">О нас сегодня</a>
-                    <a href="" class="nav-link">Награды</a>
                     <a href="" class="nav-link">История компании</a>
+                    <a href="" class="nav-link">Награды</a>
+                    <a href="" class="nav-link">О нас сегодня</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto mb-2 ms-5 list-unstyled production-submenu">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Чипсы</a>
+                    <a href="" class="nav-link">Снеки</a>
+                    <a href="" class="nav-link">Кукурузные палочки</a>
+                    <a href="" class="nav-link">Картофельное пюре</a>
+                    <a href="" class="nav-link">Производство сырья</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto mb-2 ms-5 list-unstyled industry-submenu">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Линии</a>
+                    <a href="" class="nav-link">Комплексы</a>
+                    <a href="" class="nav-link">Оборудование</a>
+                    <a href="" class="nav-link">Услуги</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto mb-2 ms-5 list-unstyled contacts-submenu">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Вакансии</a>
+                    <a href="" class="nav-link">Электронное обращение</a>
+                    <a href="" class="nav-link">Грфик приёма граждан</a>
+                    <a href="" class="nav-link">График приёма граждан руководителями концерна ОАО "Белгоспищепром"</a>
+                    <a href="" class="nav-link">Торговые представительства</a>
+                    <a href="" class="nav-link">Административные процедуры</a>
                 </li>
             </ul>
         </div>
     </div>
 
     <main class="position-relative" style="max-width: 1920px;">
-        <div id="carouselMain" class="carousel slide h-75" data-bs-ride="carousel">
+        <div id="carouselMain" class="carousel slide h-75" data-bs-ride="false">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active bullet"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselMain" class="bullet" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMain" class="bullet" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active position-relative">
@@ -133,11 +163,11 @@
                     <img src="./images/chips-main-big.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item active position-relative">
-                    <div class="position-absolute h-100 w-100 zindex-toast" style="top:30%; left:20%;">
+                    <div class=" main-slider position-absolute h-100 w-100 zindex-toast" style="top:30%; left:20%;">
                         <h1 class="display-1 fw-bold text-white">"Мира"</h1>
                         <h2 class="display-5 fw-bold text-white">Снэки<br /> картофельные</h2>
-                        <img src="./images/red-chips.png" class="position-absolute" style="bottom:24%; right:18%;"
-                            alt="...">
+                        <img src="./images/red-chips.png" class="main-slider-img position-absolute"
+                            style="bottom:24%; right:18%;" alt="...">
                     </div>
                     <img src="./images/chips-main-big.png" class="d-block w-100" alt="...">
                 </div>
@@ -165,46 +195,46 @@
 
         <div class="container-fluid my-3 mx-0">
             <div class="row my-3">
-                <div class="col-lg position-relative">
+                <div class="categories col-lg position-relative">
                     <h2 class="position-absolute display-5 fw-bold text-white" style="top: 15%; left: 10%">Чипсы</h2>
                     <img src="./images/chips-obliquely.png" class="big-chips position-absolute" alt="chips">
-                    <img class="w-100" src="./images/chips-main.png" alt="chips">
+                    <div class="chips"></div>
                 </div>
-                <div class="col-lg position-relative">
+                <div class="categories col-lg position-relative">
                     <h2 class="position-absolute display-5 fw-bold text-white" style="top: 15%; left: 10%">Снеки</h2>
                     <img src="./images/chips-obliquely.png" class="big-chips position-absolute" alt="chips">
-                    <img class="w-100" src="./images/snaks.png" alt="snaks">
+                    <div class="snaks"></div>
                 </div>
-                <div class="col-lg position-relative">
+                <div class="categories col-lg position-relative">
                     <h2 class="position-absolute display-5 fw-bold text-white"
                         style="top: 15%; left: 10%; z-index: 999;">
                         Кукурузные<br />
                         палочки</h2>
                     <img src="./images/chips-obliquely.png" class="big-chips position-absolute" alt="chips">
-                    <img class="w-100" src="./images/corn.png" alt="corn">
+                    <div class="corn"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg position-relative">
+                <div class="categories col-lg position-relative">
                     <h2 class="position-absolute display-5 fw-bold text-white"
                         style="top: 15%; left: 10%; z-index: 999;">
                         Картофельное<br /> пюре</h2>
-                    <img src="./images/chips-obliquely.png" class="big-chips position-absolute" alt="chips">
-                    <img class="w-100" src="./images/potatos.png" alt="potatos">
+                    <img src="./images/chips-obliquely.png" class="big-chips position-absolute" style="z-index: 1;"
+                        alt="chips">
+                    <div class="potatos"></div>
                 </div>
-                <div class="col-lg position-relative">
+                <div class="categories col-lg position-relative">
                     <h2 class="position-absolute display-5 fw-bold text-white" style="top: 15%; left: 10%">Жареные<br />
                         семечки</h2>
                     <img src="./images/chips-obliquely.png" class="big-chips position-absolute" alt="chips">
-                    <img class="w-100" src="./images/seeds.png" alt="seeds">
+                    <div class="seeds"></div>
                 </div>
-                <div class="col-lg position-relative bg-primary bg-gradient px-0" style="margin: 0 10px;">
-                    <div>
-                        <h2 class="position-absolute display-5 fw-bold text-white"
-                            style="top: 15%; left: 10%; z-index: 999;">
-                            Весь<br />
-                            каталог</h2>
-                    </div>
+                <div class="categories col-lg position-relative">
+                    <h2 class="position-absolute display-5 fw-bold text-white"
+                        style="top: 15%; left: 10%; z-index: 999;">
+                        Весь<br />
+                        каталог</h2>
+                    <div class="all-products"></div>
                 </div>
             </div>
         </div>
@@ -251,29 +281,29 @@
             </h2>
             <div class="row">
                 <div class="liders col position-relative">
-                    <img src="./images/chips-vertical.png" alt="best-chips">
-                    <div class="bg-info position-absolute"
+                    <img class="liders-img" src="./images/chips-vertical.png" alt="best-chips">
+                    <div class="liders-bg bg-info position-absolute"
+                        style="--bs-bg-opacity: .1; z-index: -1; bottom: 60px; left: 45px;">
+                    </div>
+                    <p class="liders-text fw-bold d-flex justify-content-center">Чипсы картофельные "Мира"</p>
+                </div>
+                <div class="liders col position-relative">
+                    <img class="liders-img" src="./images/chips-vertical.png" alt="best-chips">
+                    <div class="liders-bg bg-danger position-absolute"
                         style="--bs-bg-opacity: .1; z-index: -1; width: 75%; height: 60%; border-radius: 50%; bottom: 60px; left: 45px;">
                     </div>
                     <p class="fw-bold d-flex justify-content-center">Чипсы картофельные "Мира"</p>
                 </div>
-                <div class="col position-relative">
-                    <img src="./images/chips-vertical.png" alt="best-chips">
-                    <div class="bg-danger position-absolute"
+                <div class="liders col position-relative">
+                    <img class="liders-img" src="./images/chips-vertical.png" alt="best-chips">
+                    <div class="liders-bg bg-warning position-absolute"
                         style="--bs-bg-opacity: .1; z-index: -1; width: 75%; height: 60%; border-radius: 50%; bottom: 60px; left: 45px;">
                     </div>
                     <p class="fw-bold d-flex justify-content-center">Чипсы картофельные "Мира"</p>
                 </div>
-                <div class="col position-relative">
-                    <img src="./images/chips-vertical.png" alt="best-chips">
-                    <div class="bg-warning position-absolute"
-                        style="--bs-bg-opacity: .1; z-index: -1; width: 75%; height: 60%; border-radius: 50%; bottom: 60px; left: 45px;">
-                    </div>
-                    <p class="fw-bold d-flex justify-content-center">Чипсы картофельные "Мира"</p>
-                </div>
-                <div class="col position-relative">
-                    <img src="./images/chips-vertical.png" alt="best-chips">
-                    <div class="bg-success position-absolute"
+                <div class="liders col position-relative">
+                    <img class="liders-img" src="./images/chips-vertical.png" alt="best-chips">
+                    <div class="liders-bg bg-success position-absolute"
                         style="--bs-bg-opacity: .1; z-index: -1; width: 75%; height: 60%; border-radius: 50%; bottom: 60px; left: 45px;">
                     </div>
                     <p class="fw-bold d-flex justify-content-center">Чипсы картофельные "Мира"</p>
@@ -288,15 +318,14 @@
             </h2>
             <div id="carouselNews" class="carousel carousel-dark slide position-relative" data-bs-ride="carousel">
                 <div class="d-flex justify-content-center mb-4 position-absolute" style="top: -120px; right: 310px;">
-                    <button type="button" class="carousel-control-prev position-relative mx-4"
-                        style="border: 1px solid blue; width: 70px; height: 70px;" data-bs-target="#carouselNews"
-                        data-bs-slide="prev">
+                    <button type="button" class="carousel-control carousel-control-prev position-relative mx-4"
+                        style="border: 1px solid blue;" data-bs-target="#carouselNews" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next position-relative"
-                        style="border: 1px solid blue; width: 70px; height: 70px;" type="button"
-                        data-bs-target="#carouselNews" data-bs-slide="next">
+                    <button class="carousel-control carousel-control-next position-relative"
+                        style="border: 1px solid blue;" type="button" data-bs-target="#carouselNews"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -307,10 +336,8 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -322,10 +349,8 @@
 
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -337,10 +362,8 @@
 
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -352,10 +375,8 @@
 
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -374,10 +395,8 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -389,10 +408,8 @@
 
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -404,10 +421,8 @@
 
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -419,10 +434,8 @@
 
                             <div class="col-md-3">
                                 <div class="card mb-2 position-relative" style="border-radius: 0;">
-                                    <img class="card-img" style="border-radius: 0;" src="./images/news-chips.png"
-                                        alt="Card image cap">
-                                    <div class="card-img-overlay bg-white w-75 h-75 position-absolute top-50 start-50 translate-middle"
-                                        style="border-radius: 0;">
+                                    <div class="card-img"></div>
+                                    <div class="card-img-overlay bg-white" style="border-radius: 0;">
                                         <p class="text-danger">02.03.2022</p>
                                         <h4 class="card-title">Чипсы картофельные "Мира"</h4>
                                         <p class="card-text">По своей сути рыбатекст является альтернативой
@@ -436,7 +449,7 @@
                     </div>
                 </div>
                 <button class="news-button btn btn-primary btn-lg w-25 position-absolute"
-                    style="top: 350px; left: 700px; height: 80px;">
+                    style="top: 350px; left: 700px; height: 80px; border-radius: 0;">
                     СМОТРЕТЬ ВСЕ НОВОСТИ
                 </button>
             </div>
@@ -481,15 +494,14 @@
             <div id="carouselPartners" class="carousel carousel-dark slide position-relative" data-bs-ride="carousel"
                 style="height: 300px;">
                 <div class="d-flex justify-content-center mb-4 position-absolute" style="top: -120px; right: 310px;">
-                    <button type="button" class="carousel-control-prev position-relative mx-4"
-                        style="border: 1px solid blue; width: 70px; height: 70px;" data-bs-target="#carouselPartners"
-                        data-bs-slide="prev">
+                    <button type="button" class="carousel-control carousel-control-prev position-relative mx-4"
+                        style="border: 1px solid blue;" data-bs-target="#carouselPartners" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next position-relative"
-                        style="border: 1px solid blue; width: 70px; height: 70px;" type="button"
-                        data-bs-target="#carouselPartners" data-bs-slide="next">
+                    <button class="carousel-control carousel-control-next position-relative"
+                        style="border: 1px solid blue;" type="button" data-bs-target="#carouselPartners"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -499,42 +511,42 @@
 
                         <div class="row">
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
@@ -548,42 +560,42 @@
 
                         <div class="row">
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <div class="card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
+                                <div class="partners-card card mb-2 position-relative d-flex justify-content-center align-items-center border border-4 border-primary"
                                     style="border-radius: 0; height: 150px;">
                                     <img src="./images/logo-big.png" class="partners card-img w-50 h-50" alt="logo">
                                 </div>
@@ -595,7 +607,7 @@
             </div>
         </div>
 
-        <div class="container-fluid position-absolute bg-primary text-white" style="top: 5200px; padding: 3% 18%;">
+        <footer class="container-fluid position-absolute bg-primary text-white" style="top: 5200px; padding: 3% 18%;">
             <div class="row">
                 <div class="col">
                     <p class="fw-bold">ОАО «МАШПИЩЕПРОД» концерн «Белгоспищепром»</p>
@@ -635,15 +647,14 @@
                 <p class="fw-bold">Сайты государственных предприятий</p>
                 <div class="row">
                     <div class="col d-flex justify-content-center mb-4 position-absolute" style="left: -534px;">
-                        <button type="button" class="carousel-control-prev position-relative mx-4 bg-white"
-                            style="width: 80px; height: 80px; opacity: 1;" data-bs-target="#carouselGovernment"
-                            data-bs-slide="prev">
+                        <button type="button"
+                            class="carousel-control carousel-control-prev position-relative mx-4 bg-white"
+                            style="opacity: 1;" data-bs-target="#carouselGovernment" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next position-relative bg-white"
-                            style="width: 80px; height: 80px; opacity: 1;" type="button"
-                            data-bs-target="#carouselGovernment" data-bs-slide="next">
+                        <button class="carousel-control carousel-control-next position-relative bg-white"
+                            style="opacity: 1;" type="button" data-bs-target="#carouselGovernment" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -740,7 +751,7 @@
                     <a href="https://scroll.by/" id="scroll-logo"></a>
                 </div>
             </div>
-        </div>
+        </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

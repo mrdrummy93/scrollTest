@@ -1,24 +1,37 @@
-.nav-item .nav-link:hover {
-    border: 1px solid white;
+.about::after,
+.production::after,
+.industry::after,
+.contacts::after {
+    content: '   >';
 }
 
-.nav-item .nav-link::after {
-    content: "     >";
-    width: 100px;
-    height: 100px;
-    opacity: 0;
+.about-submenu,
+.production-submenu,
+.industry-submenu,
+.contacts-submenu {
+    display: none;
 }
 
-.nav-item .nav-link:hover::after {
-    opacity: 1;
+.about {
+    width: 523px;
+    height: 113px;
+    position: relative;
+}
+
+.about-submenu:hover,
+.about:hover+.about-submenu {
+    display: block;
+    position: absolute;
 }
 
 button.navbar-toggler {
     background-color: #0d6efd;
+    transition: all .6s ease 0s;
 }
 
 button.navbar-toggler.collapsed {
     background-color: red;
+    transition: all .6s ease 0s;
 }
 
 .navbar-toggler:focus,
@@ -34,13 +47,20 @@ button.navbar-toggler.collapsed {
     height: 3px;
     background-color: white;
     display: block;
-    transition: all 0.2s;
+    transition: all .4s ease 0s;
 }
 
 .top-bar,
-.bottom-bar,
-.middle-bar {
+.bottom-bar {
     margin: 5px auto;
+}
+
+.middle-bar {
+    margin: 5px 15px;
+}
+
+.navbar-toggler:hover .middle-bar {
+    margin: 5px 30px;
 }
 
 .navbar-toggler .top-bar {
@@ -56,6 +76,16 @@ button.navbar-toggler.collapsed {
 .navbar-toggler .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
+}
+
+.navbar-toggler:hover .top-bar {
+    transform: rotate(0);
+    transform: translateY(8px);
+}
+
+.navbar-toggler:hover .bottom-bar {
+    transform: rotate(0);
+    transform: translateY(-8px);
 }
 
 .navbar-toggler.collapsed .top-bar {
@@ -75,6 +105,10 @@ button.navbar-toggler.collapsed {
     background-color: white;
 }
 
+.collapse.show .header-list {
+    display: none;
+}
+
 #scroll-logo {
     width: 85px;
     height: 25px;
@@ -88,6 +122,7 @@ button.navbar-toggler.collapsed {
 
 .list-menu .nav-link:hover {
     color: #0d6efd;
+    transition: all .4s ease 0s;
 }
 
 .news-button:hover {
@@ -106,31 +141,165 @@ button.navbar-toggler.collapsed {
     bottom: 0%;
     right: -10%;
     z-index: 999;
+    width: 455px;
+    height: 460px;
+    transition: all .4s ease 0s;
 }
 
 .big-chips:hover {
+    cursor: pointer;
+}
+
+.categories h2:hover {
+    cursor: pointer;
+}
+
+.categories:hover .big-chips {
     width: 530px;
     height: 520px;
     right: -20%;
+    transition: all .4s ease 0s;
+}
+
+.categories:hover .chips {
+    background-position: 0px 1px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.categories:hover .snaks {
+    background-position: 0px 1px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.categories:hover .corn {
+    background-position: 0px 1px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.categories:hover .potatos {
+    background-position: 0px 1px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.categories:hover .seeds {
+    background-position: 0px 1px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.categories:hover .all-products {
+    background-position: 0px 1px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.card:hover .card-img {
+    background-position: 50% 100%;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.card:hover .card-img-overlay {
+    transform: translateY(17%);
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.chips {
+    background-image: url(./images/chips-main.png);
+    background-position: center;
+    width: 615px;
+    height: 512px;
+    background-size: 110% 100%;
+    transition: all .4s ease 0s;
+}
+
+.snaks {
+    background-image: url(./images/snaks.png);
+    background-position: center;
+    width: 615px;
+    height: 512px;
+    background-size: 110% 100%;
+    transition: all .4s ease 0s;
+}
+
+.corn {
+    background-image: url(./images/corn.png);
+    background-position: center;
+    width: 615px;
+    height: 512px;
+    background-size: 110% 100%;
+    transition: all .4s ease 0s;
+}
+
+.potatos {
+    background-image: url(./images/potatos.png);
+    background-position: center;
+    width: 615px;
+    height: 512px;
+    background-size: 110% 100%;
+    transition: all .4s ease 0s;
+}
+
+.seeds {
+    background-image: url(./images/seeds.png);
+    background-position: center;
+    width: 615px;
+    height: 512px;
+    background-size: 110% 100%;
+    transition: all .4s ease 0s;
+}
+
+.all-products {
+    background-image: url(./images/gradient.jpg);
+    background-position: center;
+    width: 615px;
+    height: 512px;
+    background-size: 110% 100%;
+    transition: all .4s ease 0s;
+}
+
+.card-img {
+    background-image: url(./images/news-chips.png);
+    background-position: center;
+    width: 453px;
+    height: 287px;
+    background-size: 100% -100%;
+    transition: all .4s ease 0s;
 }
 
 .government-cards {
     width: 50%;
     height: 50%;
+    transition: all .4s ease 0s;
 }
 
 .government-cards:hover {
     width: 110px;
     height: 50px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.socials {
+    width: 44px;
+    height: 44px;
+    transition: all .4s ease 0s;
 }
 
 .socials:hover {
     width: 54px;
     height: 54px;
+    transition: all .4s ease 0s;
 }
 
 .btn .btn-primary:hover {
     background-color: #005291;
+    transition: all .4s ease 0s;
 }
 
 .liders:hover {
@@ -156,5 +325,128 @@ button.search-toggler.collapsed .search-toggler-icon {
     background-image: url(./images/search.svg);
     background-repeat: no-repeat;
     margin-left: 25px;
-    transition: all 0.2s;
+    transition: all 0.4s ease 0s;
+}
+
+.dropdown-menu {
+    min-width: 100px;
+    transition: all 0.4s ease 0s;
+}
+
+.btn .btn-primary .show {
+    transition: all 4s ease 0s;
+}
+
+.dropdown-item.text-white {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-indicators {
+    top: 700px;
+    right: 1000px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: initial;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+}
+
+.carousel-indicators .active {
+    background-color: red;
+    transition: all .4s ease 0s;
+}
+
+.bullet:hover {
+    transform-origin: center;
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    transition: all .4s ease 0s;
+}
+
+.liders-img {
+    width: 345px;
+    height: 437px;
+    transition: all .4s ease 0s;
+}
+
+.liders:hover .liders-img {
+    width: 350px;
+    height: 450px;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.liders-bg {
+    width: 278px;
+    height: 286px;
+    border-radius: 50%;
+    transition: all .4s ease 0s;
+}
+
+.liders:hover .liders-bg {
+    transform-origin: bottom;
+    transform: scale(1.1, 1.4);
+    transition: all .4s ease 0s;
+    opacity: 1;
+}
+
+.liders:hover .liders-text {
+    color: red;
+    transition: all .4s ease 0s;
+}
+
+.carousel-control {
+    width: 70px;
+    height: 70px;
+    transition: all .4s ease 0s;
+}
+
+.carousel-control:hover {
+    transform: scaleX(1.2);
+    transition: all .4s ease 0s;
+}
+
+.carousel-control:hover .carousel-control-prev-icon {
+    transform: translateX(-50%);
+    transition: all .4s ease 0s;
+}
+
+.carousel-control:hover .carousel-control-next-icon {
+    transform: translateX(50%);
+    transition: all .4s ease 0s;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    width: 340px;
+    height: 215px;
+    transition: all .4s ease 0s;
+}
+
+.news-card:hover {
+    transform: scaleY(1);
+    transform-origin: center;
+    transition: all .4s ease 0s;
+}
+
+.partners-card {
+    width: 295px;
+    transition: all .4s ease 0s;
+}
+
+.partners-card:hover {
+    transform: scaleX(1.1);
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.partners-card:hover .partners {
+    filter: grayscale(0);
 }
